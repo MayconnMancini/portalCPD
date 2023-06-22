@@ -1,0 +1,65 @@
+.fundo {
+    background-color: #efefef;
+}
+
+.fundo-container {
+    background-color: white;    
+}
+
+.rodape1 {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    background-color: red;
+    bottom: 0;
+}
+
+/* faz com que o datapicker apareca sobre o modal */
+#ui-datepicker-div { 
+ 
+    z-index: 999999 !important; /* has to be larger than 1050 */
+}
+
+/* ocultar o campo selecione do select do formulario */
+option[value=""][disabled] {
+    display: none;
+  }
+
+
+/* tooltip */
+
+.dica {
+    position: relative;
+    display: inline-block;
+}
+.dica:hover .dicaTexto {
+    visibility: visible;
+
+}
+
+.dicaTexto {
+    position: absolute;
+    visibility: hidden;
+    font-size: 13px;
+    width: 150px;
+    background: rgb(2, 18, 20);
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 6px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -75px;
+    margin-bottom: 5px;
+}
+.dicaTexto::after {
+    content: "";
+    position: absolute;
+    top: 100% ;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+
+}
